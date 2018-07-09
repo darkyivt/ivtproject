@@ -99,7 +99,6 @@
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "SAMPLE TEXT";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
