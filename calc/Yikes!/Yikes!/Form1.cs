@@ -18,37 +18,29 @@ namespace Yikes_
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double currnum1, currnum2, endres;
-            currnum1 = (Convert.ToDouble(textBox1.Text));
-            currnum2 = (Convert.ToDouble(textBox2.Text));
-            endres = currnum1 / currnum2;
+            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
+            double endres = currnum1 / currnum2;
             label1.Text = Convert.ToString(endres);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double currnum1, currnum2, endres;
-            currnum1 = (Convert.ToDouble(textBox1.Text));
-            currnum2 = (Convert.ToDouble(textBox2.Text));
-            endres = currnum1 + currnum2;
+            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
+            double endres = currnum1 + currnum2;
             label1.Text = Convert.ToString(endres);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double currnum1, currnum2, endres;
-            currnum1 = (Convert.ToDouble(textBox1.Text));
-            currnum2 = (Convert.ToDouble(textBox2.Text));
-            endres = currnum1 - currnum2;
+            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
+            double endres = currnum1 - currnum2;
             label1.Text = Convert.ToString(endres);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            double currnum1, currnum2, endres;
-            currnum1 = (Convert.ToDouble(textBox1.Text));
-            currnum2 = (Convert.ToDouble(textBox2.Text));
-            endres = currnum1 * currnum2;
+            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
+            double endres = currnum1 * currnum2;
             label1.Text = Convert.ToString(endres);
         }
     }
