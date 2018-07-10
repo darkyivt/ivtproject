@@ -16,31 +16,17 @@ namespace Yikes_
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void rnd_Click(object sender, EventArgs e)
         {
-            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
-            double endres = currnum1 / currnum2;
-            label1.Text = Convert.ToString(endres);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
-            double endres = currnum1 + currnum2;
-            label1.Text = Convert.ToString(endres);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
-            double endres = currnum1 - currnum2;
-            label1.Text = Convert.ToString(endres);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
-            double endres = currnum1 * currnum2;
+            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text), endres;
+            switch (((Button)sender).Name)
+            {
+                case ("bplus"): endres = currnum1 + currnum2; break;
+                case ("bdiv"): endres = currnum1 / currnum2;  break;
+                case ("bminus"): endres = currnum1 - currnum2; break;
+                case ("bmult"): endres = currnum1 * currnum2;  break;
+                default: throw new Exception("Неизвестная операция");
+            }
             label1.Text = Convert.ToString(endres);
         }
     }
