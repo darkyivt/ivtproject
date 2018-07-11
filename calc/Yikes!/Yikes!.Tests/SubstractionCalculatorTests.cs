@@ -16,9 +16,7 @@ namespace Yikes_.Tests
                         void CalcMetTests()
         {
             SubstractionCalculator mulc = new SubstractionCalculator();
-            double ExpResult, ActResult;
-            ExpResult = 66 - 33;
-            ActResult = mulc.CalcMet(66, 33);
+            double ExpResult = 66 - 33, ActResult = mulc.CalcMet(66, 33);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

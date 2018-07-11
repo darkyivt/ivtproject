@@ -15,9 +15,7 @@ namespace Yikes_.Tests
                   void CalcMetTests()
         {
             DivisionCalculator divc = new DivisionCalculator();
-            double ExpResult, ActResult;
-            ExpResult = 66/33;
-            ActResult = divc.CalcMet(66, 33);
+            double ExpResult = 66 / 33, ActResult = divc.CalcMet(66, 33);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

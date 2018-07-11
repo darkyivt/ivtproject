@@ -15,10 +15,8 @@ namespace Yikes_.Tests
                void CalcMetTests()
         {
             AdditionCalculator addc = new AdditionCalculator();
-            double ExpResult, ActResult;
-            ExpResult = 33+66;
-            ActResult = addc.CalcMet(33, 66);
-            Assert.AreEqual(ExpResult, ActResult);
+            double ExpResult = 33 + 66, actResult = addc.CalcMet(33, 66); ;
+            Assert.AreEqual(ExpResult, actResult);
         }
     }
 }

@@ -14,9 +14,7 @@ namespace Yikes_.Tests
                   void CalcSinTests()
         {
             CosCalculator cosc = new CosCalculator();
-            double ExpResult, ActResult;
-            ExpResult = Cos(33);
-            ActResult = cosc.CalcCos(33);
+            double ExpResult = Cos(33), ActResult = cosc.CalcCos(33);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

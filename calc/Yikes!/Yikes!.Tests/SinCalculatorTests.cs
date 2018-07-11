@@ -16,9 +16,7 @@ namespace Yikes_.Tests
                void CalcSinTests()
         {
             SinCalculator sinc = new SinCalculator();
-            double ExpResult, ActResult;
-            ExpResult = Sin(33);
-            ActResult = sinc.CalcSin(33);
+            double ExpResult = Sin(33), ActResult = sinc.CalcSin(33);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }
