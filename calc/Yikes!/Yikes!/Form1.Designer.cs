@@ -35,6 +35,10 @@
             this.bminus = new System.Windows.Forms.Button();
             this.bmult = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.bsin = new System.Windows.Forms.Button();
+            this.btan = new System.Windows.Forms.Button();
+            this.bcos = new System.Windows.Forms.Button();
+            this.bln = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -59,7 +63,7 @@
             this.bplus.TabIndex = 2;
             this.bplus.Text = "+";
             this.bplus.UseVisualStyleBackColor = true;
-            this.bplus.Click += new System.EventHandler(this.rnd_Click);
+            this.bplus.Click += new System.EventHandler(this.rnd_Click2);
             // 
             // bdiv
             // 
@@ -69,7 +73,7 @@
             this.bdiv.TabIndex = 3;
             this.bdiv.Text = "/";
             this.bdiv.UseVisualStyleBackColor = true;
-            this.bdiv.Click += new System.EventHandler(this.rnd_Click);
+            this.bdiv.Click += new System.EventHandler(this.rnd_Click2);
             // 
             // bminus
             // 
@@ -79,7 +83,7 @@
             this.bminus.TabIndex = 4;
             this.bminus.Text = "-";
             this.bminus.UseVisualStyleBackColor = true;
-            this.bminus.Click += new System.EventHandler(this.rnd_Click);
+            this.bminus.Click += new System.EventHandler(this.rnd_Click2);
             // 
             // bmult
             // 
@@ -89,7 +93,7 @@
             this.bmult.TabIndex = 5;
             this.bmult.Text = "*";
             this.bmult.UseVisualStyleBackColor = true;
-            this.bmult.Click += new System.EventHandler(this.rnd_Click);
+            this.bmult.Click += new System.EventHandler(this.rnd_Click2);
             // 
             // label1
             // 
@@ -100,11 +104,55 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "SAMPLE TEXT";
             // 
+            // bsin
+            // 
+            this.bsin.Location = new System.Drawing.Point(13, 156);
+            this.bsin.Name = "bsin";
+            this.bsin.Size = new System.Drawing.Size(75, 23);
+            this.bsin.TabIndex = 7;
+            this.bsin.Text = "sin";
+            this.bsin.UseVisualStyleBackColor = true;
+            this.bsin.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // btan
+            // 
+            this.btan.Location = new System.Drawing.Point(94, 156);
+            this.btan.Name = "btan";
+            this.btan.Size = new System.Drawing.Size(75, 23);
+            this.btan.TabIndex = 8;
+            this.btan.Text = "tan";
+            this.btan.UseVisualStyleBackColor = true;
+            this.btan.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // bcos
+            // 
+            this.bcos.Location = new System.Drawing.Point(175, 156);
+            this.bcos.Name = "bcos";
+            this.bcos.Size = new System.Drawing.Size(75, 23);
+            this.bcos.TabIndex = 9;
+            this.bcos.Text = "cos";
+            this.bcos.UseVisualStyleBackColor = true;
+            this.bcos.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // bln
+            // 
+            this.bln.Location = new System.Drawing.Point(94, 185);
+            this.bln.Name = "bln";
+            this.bln.Size = new System.Drawing.Size(75, 23);
+            this.bln.TabIndex = 10;
+            this.bln.Text = "ln";
+            this.bln.UseVisualStyleBackColor = true;
+            this.bln.Click += new System.EventHandler(this.rnd_Click1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.bln);
+            this.Controls.Add(this.bcos);
+            this.Controls.Add(this.btan);
+            this.Controls.Add(this.bsin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bmult);
             this.Controls.Add(this.bminus);
@@ -128,6 +176,10 @@
         private System.Windows.Forms.Button bminus;
         private System.Windows.Forms.Button bmult;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bsin;
+        private System.Windows.Forms.Button btan;
+        private System.Windows.Forms.Button bcos;
+        private System.Windows.Forms.Button bln;
     }
 }
 
