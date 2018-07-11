@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Yikes_
 {
+    public
     class AdditionCalculator
     {
         public

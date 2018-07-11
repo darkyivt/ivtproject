@@ -6,6 +6,7 @@ using static System.Math;
 
 namespace Yikes_
 {
+    public
     class LnCalculator
     {
         public

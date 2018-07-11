@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace Yikes_
 {
+    public
     class CalculateTwoArg
     {
         public

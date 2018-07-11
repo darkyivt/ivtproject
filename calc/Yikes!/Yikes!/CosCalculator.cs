@@ -7,6 +7,7 @@ using static System.Math;
 
 namespace Yikes_
 {
+    public
     class CosCalculator
     {
         public
