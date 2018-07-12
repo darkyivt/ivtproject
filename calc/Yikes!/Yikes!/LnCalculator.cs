@@ -7,10 +7,10 @@ using static System.Math;
 namespace Yikes_
 {
     public
-    class LnCalculator
+    class LnCalculator: IOnearg
     {
-        public
-           double CalcLog(double num)
+        public 
+           double Calculate(double num)
         {
             double endres = 0;
             endres = Log(num);

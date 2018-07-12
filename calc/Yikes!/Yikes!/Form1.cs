@@ -18,17 +18,17 @@ namespace Yikes_
 
         private void rnd_Click2(object sender, EventArgs e)
         {
-            CalculateTwoArg cal2 = new CalculateTwoArg();
-            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text), endres;
-            endres = cal2.Calculate(sender, currnum1, currnum2);
+            ITwoarg cal2 = FactoryTwoArg.CreateCalculator(((Button)sender).Name);
+            double currnum1 = Convert.ToDouble(textBox1.Text), currnum2 = Convert.ToDouble(textBox2.Text);
+            double endres = cal2.Calculate(currnum1, currnum2);
             label1.Text = Convert.ToString(endres);
         }
 
         private void rnd_Click1(object sender, EventArgs e)
         {
-            CalculateOneArg cal1 = new CalculateOneArg();
-            double currnum = Convert.ToDouble(textBox1.Text), endres;
-            endres = cal1.Calculate(sender, currnum);
+            IOnearg cal1 = FactoryOneArg.CreateCalculator(((Button)sender).Name);
+            double currnum = Convert.ToDouble(textBox1.Text);
+            double endres = cal1.Calculate(currnum);
             label1.Text = Convert.ToString(endres);
         }
     }

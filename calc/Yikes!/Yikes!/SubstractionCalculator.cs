@@ -6,10 +6,10 @@ using System.Text;
 namespace Yikes_
 {
     public
-    class SubstractionCalculator
+    class SubstractionCalculator: ITwoarg
     {
         public
-           double CalcMet(double num1, double num2)
+           double Calculate(double num1, double num2)
         {
             double endres;
             endres = num1 - num2;

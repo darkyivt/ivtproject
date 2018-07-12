@@ -8,10 +8,10 @@ using static System.Math;
 namespace Yikes_
 {
     public
-    class CosCalculator
+    class CosCalculator : IOnearg
     {
         public
-        double CalcCos(double num)
+        double Calculate(double num)
         {
             double endres = 0;
             endres = Cos(num);

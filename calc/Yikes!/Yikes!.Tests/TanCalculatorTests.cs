@@ -18,7 +18,7 @@ namespace Yikes_.Tests
             void CalcTanTests(double testnum)
         {
             TanCalculator tanc = new TanCalculator();
-            double ExpResult = Tan(testnum), ActResult = tanc.CalcTan(testnum);
+            double ExpResult = Tan(testnum), ActResult = tanc.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

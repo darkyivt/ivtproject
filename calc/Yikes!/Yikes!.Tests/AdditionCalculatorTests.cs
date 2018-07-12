@@ -17,7 +17,7 @@ namespace Yikes_.Tests
                void CalcMetTests(double firstarg, double secarg)
         {
             AdditionCalculator addc = new AdditionCalculator();
-            double ExpResult = firstarg + secarg, actResult = addc.CalcMet(firstarg, secarg); ;
+            double ExpResult = firstarg + secarg, actResult = addc.Calculate(firstarg, secarg); ;
             Assert.AreEqual(ExpResult, actResult);
         }
     }

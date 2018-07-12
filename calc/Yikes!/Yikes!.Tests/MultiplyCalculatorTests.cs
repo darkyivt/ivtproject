@@ -17,7 +17,7 @@ namespace Yikes_.Tests
                      void CalcMetTests(double firstarg, double secarg)
         {
             MultiplyCalculator mulc = new MultiplyCalculator();
-            double ExpResult = firstarg * secarg, ActResult = mulc.CalcMet(firstarg, secarg);
+            double ExpResult = firstarg * secarg, ActResult = mulc.Calculate(firstarg, secarg);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

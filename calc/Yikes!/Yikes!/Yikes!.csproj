@@ -44,16 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionCalculator.cs" />
-    <Compile Include="CalculateOneArg.cs" />
-    <Compile Include="CalculateTwoArg.cs" />
+    <Compile Include="InterfaceOneArg.cs" />
     <Compile Include="CosCalculator.cs" />
     <Compile Include="DivisionCalculator.cs" />
+    <Compile Include="FactoryOneArg.cs" />
+    <Compile Include="FactoryTwoArg.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceTwo.cs" />
     <Compile Include="LnCalculator.cs" />
     <Compile Include="MultiplyCalculator.cs" />
     <Compile Include="Program.cs" />

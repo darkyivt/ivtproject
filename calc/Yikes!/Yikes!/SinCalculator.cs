@@ -7,10 +7,10 @@ using static System.Math;
 namespace Yikes_
 {
     public
-    class SinCalculator
+    class SinCalculator: IOnearg
     {
         public
-        double CalcSin(double num)
+        double Calculate(double num)
         {
             double endres = 0;
             endres = Sin(num);

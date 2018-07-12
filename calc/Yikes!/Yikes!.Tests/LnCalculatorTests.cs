@@ -16,7 +16,7 @@ namespace Yikes_.Tests
                void CalcLogTests(double testnum)
         {
             LnCalculator logc = new LnCalculator();
-            double ExpResult = Log(testnum), ActResult = logc.CalcLog(testnum);
+            double ExpResult = Log(testnum), ActResult = logc.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

@@ -17,7 +17,7 @@ namespace Yikes_.Tests
                   void CalcMetTests(double firstarg, double secarg)
         {
             DivisionCalculator divc = new DivisionCalculator();
-            double ExpResult = firstarg / secarg, ActResult = divc.CalcMet(firstarg, secarg);
+            double ExpResult = firstarg / secarg, ActResult = divc.Calculate(firstarg, secarg);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionCalculatorTests.cs" />
+    <Compile Include="CalculateOneArgTests.cs" />
+    <Compile Include="CalculateTwoArgTests.cs" />
     <Compile Include="CosCalculatorTests.cs" />
     <Compile Include="DivisionCalculatorTests.cs" />
     <Compile Include="LnCalculatorTests.cs" />

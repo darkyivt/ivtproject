@@ -7,10 +7,10 @@ using static System.Math;
 namespace Yikes_
 {
     public
-    class TanCalculator
+    class TanCalculator: IOnearg
     {
         public
-           double CalcTan(double num)
+           double Calculate(double num)
         {
             double endres = 0;
             endres = Tan(num);
