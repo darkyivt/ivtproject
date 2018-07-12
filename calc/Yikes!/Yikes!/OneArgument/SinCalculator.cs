@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using static System.Math;
 
-namespace Yikes_
+namespace Yikes_.OneArgument
 {
     public
     class SinCalculator: IOnearg
@@ -13,7 +9,7 @@ namespace Yikes_
         double Calculate(double num)
         {
             double endres = 0;
-            endres = Sin(num);
+            endres = Math.Sin(num);
             return (endres);
         }
     }

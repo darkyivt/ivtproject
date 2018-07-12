@@ -1,4 +1,4 @@
-﻿namespace Yikes_
+﻿namespace Yikes_.TwoArgument
 {
     public interface ITwoarg
     {

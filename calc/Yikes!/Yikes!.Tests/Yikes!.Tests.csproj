@@ -45,17 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdditionCalculatorTests.cs" />
-    <Compile Include="CalculateOneArgTests.cs" />
-    <Compile Include="CalculateTwoArgTests.cs" />
-    <Compile Include="CosCalculatorTests.cs" />
-    <Compile Include="DivisionCalculatorTests.cs" />
-    <Compile Include="LnCalculatorTests.cs" />
-    <Compile Include="MultiplyCalculatorTests.cs" />
+    <Compile Include="OneArgumentTest\CubeCalculatorTest.cs" />
+    <Compile Include="OneArgumentTest\ExpCalculatorTest.cs" />
+    <Compile Include="OneArgumentTest\LogCalculatorTest.cs" />
+    <Compile Include="OneArgumentTest\LogTenCalculator.cs" />
+    <Compile Include="OneArgumentTest\SquareCalculatorTest.cs" />
+    <Compile Include="TwoArgumentTest\AdditionCalculatorTests.cs" />
+    <Compile Include="OneArgumentTest\CalculateOneArgTests.cs" />
+    <Compile Include="TwoArgumentTest\CalculateTwoArgTests.cs" />
+    <Compile Include="OneArgumentTest\CosCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTest\DivisionCalculatorTests.cs" />
+    <Compile Include="OneArgumentTest\LnCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTest\LogCalculatorTest.cs" />
+    <Compile Include="OneArgumentTest\ModCalculatorTest.cs" />
+    <Compile Include="TwoArgumentTest\MultiplyCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTest\PowCalculatortest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinCalculatorTests.cs" />
-    <Compile Include="SubstractionCalculatorTests.cs" />
-    <Compile Include="TanCalculatorTests.cs" />
+    <Compile Include="OneArgumentTest\SinCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTest\SubstractionCalculatorTests.cs" />
+    <Compile Include="OneArgumentTest\TanCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Yikes!\Yikes!.csproj">

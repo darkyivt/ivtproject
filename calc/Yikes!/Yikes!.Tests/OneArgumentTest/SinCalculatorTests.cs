@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using Yikes_.OneArgument;
 using static System.Math;
 
 namespace Yikes_.Tests
 {
-    class CosCalculatorTests
+    [TestFixture]
+    public
+    class SinCalculatorTests
     {
         [TestCase(33)]
         [TestCase(66)]
         [TestCase(77)]
         public
-                  void CalcSinTests(double testnum)
+               void CalcSinTests(double typein)
         {
-            CosCalculator cosc = new CosCalculator();
-            double ExpResult = Cos(testnum), ActResult = cosc.Calculate(testnum);
+            SinCalculator sinc = new SinCalculator();
+            double ExpResult = Sin(typein), ActResult = sinc.Calculate(typein);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

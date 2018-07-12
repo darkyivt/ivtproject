@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Windows.Forms;
-namespace Yikes_
+
+namespace Yikes_.OneArgument
 {
     public 
     class FactoryOneArg
@@ -24,6 +19,16 @@ namespace Yikes_
                     return new TanCalculator();
                 case ("bln"):
                     return new LnCalculator();
+                case ("bsquare"):
+                    return new SquareCalculator();
+                case ("bcube"):
+                    return new CubeCalculator();
+                case ("bexp"):
+                    return new ExpCalculator();
+                case ("bl10"):
+                    return new LogTenCalculator();
+                case ("bmod"):
+                    return new ModCalculator();
                 default: throw new Exception("Неизвестная операция");
             }
 

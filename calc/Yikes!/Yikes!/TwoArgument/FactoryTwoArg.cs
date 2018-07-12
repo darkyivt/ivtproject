@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+using Yikes_.OneArgument;
 
-namespace Yikes_
+namespace Yikes_.TwoArgument
 {
     public
         class FactoryTwoArg
@@ -22,6 +19,10 @@ namespace Yikes_
                     return new MultiplyCalculator();
                 case ("bminus"):
                     return new SubstractionCalculator();
+                case ("bpow"):
+                    return new PowCalculator();
+                case ("blog"):
+                    return new LogCalculator();
                 default: throw new Exception("Неизвестная операция");
             }
         }
