@@ -9,12 +9,14 @@ namespace Yikes_.Tests
 {
     class LnCalculatorTests
     {
-        [Test]
+        [TestCase(33)]
+        [TestCase(66)]
+        [TestCase(77)]
         public
-               void CalcLogTests()
+               void CalcLogTests(double testnum)
         {
             LnCalculator logc = new LnCalculator();
-            double ExpResult = Log(33), ActResult = logc.CalcLog(33);
+            double ExpResult = Log(testnum), ActResult = logc.CalcLog(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

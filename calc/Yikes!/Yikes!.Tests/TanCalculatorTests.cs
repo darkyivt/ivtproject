@@ -11,12 +11,14 @@ namespace Yikes_.Tests
     public
     class TanCalculatorTests
     {
-        [Test]
+        [TestCase(33)]
+        [TestCase(66)]
+        [TestCase(77)]
         public
-            void CalcTanTests()
+            void CalcTanTests(double testnum)
         {
             TanCalculator tanc = new TanCalculator();
-            double ExpResult = Tan(33), ActResult = tanc.CalcTan(33);
+            double ExpResult = Tan(testnum), ActResult = tanc.CalcTan(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

@@ -11,12 +11,14 @@ namespace Yikes_.Tests
     public
     class SinCalculatorTests
     {
-        [Test]
+        [TestCase(33)]
+        [TestCase(66)]
+        [TestCase(77)]
         public
-               void CalcSinTests()
+               void CalcSinTests(double typein)
         {
             SinCalculator sinc = new SinCalculator();
-            double ExpResult = Sin(33), ActResult = sinc.CalcSin(33);
+            double ExpResult = Sin(typein), ActResult = sinc.CalcSin(typein);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

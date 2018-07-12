@@ -9,12 +9,14 @@ namespace Yikes_.Tests
 {
     class CosCalculatorTests
     {
-        [Test]
+        [TestCase(33)]
+        [TestCase(66)]
+        [TestCase(77)]
         public
-                  void CalcSinTests()
+                  void CalcSinTests(double testnum)
         {
             CosCalculator cosc = new CosCalculator();
-            double ExpResult = Cos(33), ActResult = cosc.CalcCos(33);
+            double ExpResult = Cos(testnum), ActResult = cosc.CalcCos(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

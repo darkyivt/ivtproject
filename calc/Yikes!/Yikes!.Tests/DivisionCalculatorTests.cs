@@ -10,12 +10,14 @@ namespace Yikes_.Tests
     public
     class DivisionCalculatorTests
     {
-        [Test]
+        [TestCase(66, 33)]
+        [TestCase(33, 3)]
+        [TestCase(12, 33)]
         public
-                  void CalcMetTests()
+                  void CalcMetTests(double firstarg, double secarg)
         {
             DivisionCalculator divc = new DivisionCalculator();
-            double ExpResult = 66 / 33, ActResult = divc.CalcMet(66, 33);
+            double ExpResult = firstarg / secarg, ActResult = divc.CalcMet(firstarg, secarg);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

@@ -10,12 +10,14 @@ namespace Yikes_.Tests
     public
     class MultiplyCalculatorTests
     {
-        [Test]
+        [TestCase(66, 33)]
+        [TestCase(33, 3)]
+        [TestCase(12, 33)]
         public
-                     void CalcMetTests()
+                     void CalcMetTests(double firstarg, double secarg)
         {
             MultiplyCalculator mulc = new MultiplyCalculator();
-            double ExpResult = 66 * 33, ActResult = mulc.CalcMet(66, 33);
+            double ExpResult = firstarg * secarg, ActResult = mulc.CalcMet(firstarg, secarg);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }
