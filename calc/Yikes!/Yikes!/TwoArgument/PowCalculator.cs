@@ -3,22 +3,22 @@
 namespace Yikes_.TwoArgument
 {
     public
-        class PowCalculator : ITwoarg
+        class PowCalculator : ITwoArgument
     {
         /// <summary>
         /// Calculate function Pow
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="FirstArgument"></param>
+        /// <param name="SecondArgument"></param>
         /// Check two arguments
         /// <returns>
         /// Result NumberPow of two argument
         /// </returns>
         public
-            double Calculate(double num1, double num2)
+            double Calculate(double FirstArgument, double SecondArgument)
         {
             double endres = 0;
-            endres = Math.Pow(num1, num2);
+            endres = Math.Pow(FirstArgument, SecondArgument);
             return (endres);
         }
     }

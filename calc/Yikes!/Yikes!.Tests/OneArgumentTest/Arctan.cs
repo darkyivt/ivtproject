@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
-    class ArcTanTests
+    [TestFixture]
+    public class ArctangentTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcTests(double testnum)
+        [TestCase(0.9, 0.7328)]
+        [TestCase(0.6, 0.5404)]
+        [TestCase(0.5, 0.4636)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            ArcTan arctanc = new ArcTan();
-            double ExpResult = Atan(testnum), ActResult = arctanc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new ArcTan();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.0001);
         }
     }
 }
+

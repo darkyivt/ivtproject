@@ -3,21 +3,21 @@
 namespace Yikes_.OneArgument
 {
     public
-        class TanCalculator : IOnearg
+        class TanCalculator : IOneArgument
     {
         /// <summary>
         /// Calculate function Tg(x)
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="FirstArgument"></param>
         /// tg(x) is calculate
         /// <returns>
         /// Returns result function tg(x)
         /// </returns>
         public
-            double Calculate(double num)
+            double Calculate(double FirstArgument)
         {
             double endres = 0;
-            endres = Math.Tan(num);
+            endres = Math.Tan(FirstArgument);
             return (endres);
         }
     }

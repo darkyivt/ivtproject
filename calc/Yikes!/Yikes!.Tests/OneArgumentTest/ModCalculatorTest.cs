@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
     class ModTests
     {
@@ -17,7 +13,7 @@ namespace Yikes_.Tests
             void CalcTests(double testnum)
         {
             SquareCalculator sqare = new SquareCalculator();
-            double ExpResult = Abs(testnum), ActResult = sqare.Calculate(testnum);
+            double ExpResult = Math.Abs(testnum), ActResult = sqare.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

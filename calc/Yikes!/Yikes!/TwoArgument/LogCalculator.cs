@@ -1,16 +1,15 @@
 ﻿using System;
-using Yikes_.TwoArgument;
 
 namespace Yikes_.TwoArgument
 {
     public
-        class LogCalculator : ITwoarg
+        class LogCalculator : ITwoArgument
     {
         /// <summary>
         /// Calculate Logarithm function
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="FirsArgument"></param>
+        /// <param name="SecondArgument"></param>
         /// Check num1
         /// if num1==0
         /// then error
@@ -19,14 +18,14 @@ namespace Yikes_.TwoArgument
         /// </returns>
 
         public
-            double Calculate(double num1, double num2)
+            double Calculate(double FirstArgument, double SecondArgument)
         {
             double endres = 0;
-            if (num1 == 0)
+            if (FirstArgument == 0)
             {
                 throw new Exception("Нулевой логарифм не существует");
             }
-            endres = Math.Log(num1, num2);
+            endres = Math.Log(FirstArgument, SecondArgument);
             return (endres);
         }
 

@@ -1,24 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
-    class ArcSinTests
+    [TestFixture]
+    public class ArcSinusTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcTests(double testnum)
+        [TestCase(0.7, 0.7754)]
+        [TestCase(0.45, 0.4668)]
+        [TestCase(1, 1.5708)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            ArcSin arcsinc = new ArcSin();
-            double ExpResult = Asin(testnum), ActResult = arcsinc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new ArcSin();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.0001);
+        }
+        [TestCase(-2)]
+        [TestCase(2)]
+        public void ExceptionTest(double firstArgument)
+        {
+            var calculator = new ArcSin();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
         }
     }
 }

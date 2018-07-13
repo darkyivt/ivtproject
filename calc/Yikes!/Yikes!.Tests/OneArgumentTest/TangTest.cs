@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
-    class TanhTests
+    [TestFixture]
+    public class TanHTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcTests(double testnum)
+        [TestCase(0.5, 0.4621)]
+        [TestCase(0, 0)]
+        [TestCase(-0.9, -0.7163)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            TanH tanhc = new TanH();
-            double ExpResult = Tanh(testnum), ActResult = tanhc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new TanH();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.0001);
         }
     }
 }

@@ -48,6 +48,15 @@
             this.bl10 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.barcsin = new System.Windows.Forms.Button();
+            this.barccos = new System.Windows.Forms.Button();
+            this.barctan = new System.Windows.Forms.Button();
+            this.barcctg = new System.Windows.Forms.Button();
+            this.bfivestep = new System.Windows.Forms.Button();
+            this.brevers = new System.Windows.Forms.Button();
+            this.btanh = new System.Windows.Forms.Button();
+            this.bsqrt = new System.Windows.Forms.Button();
+            this.brad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -241,11 +250,110 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Two-Argument";
             // 
+            // barcsin
+            // 
+            this.barcsin.Location = new System.Drawing.Point(13, 265);
+            this.barcsin.Name = "barcsin";
+            this.barcsin.Size = new System.Drawing.Size(75, 23);
+            this.barcsin.TabIndex = 20;
+            this.barcsin.Text = "arcsin";
+            this.barcsin.UseVisualStyleBackColor = true;
+            this.barcsin.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // barccos
+            // 
+            this.barccos.Location = new System.Drawing.Point(94, 265);
+            this.barccos.Name = "barccos";
+            this.barccos.Size = new System.Drawing.Size(75, 23);
+            this.barccos.TabIndex = 21;
+            this.barccos.Text = "arccos";
+            this.barccos.UseVisualStyleBackColor = true;
+            this.barccos.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // barctan
+            // 
+            this.barctan.Location = new System.Drawing.Point(175, 265);
+            this.barctan.Name = "barctan";
+            this.barctan.Size = new System.Drawing.Size(75, 23);
+            this.barctan.TabIndex = 22;
+            this.barctan.Text = "arctan";
+            this.barctan.UseVisualStyleBackColor = true;
+            this.barctan.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // barcctg
+            // 
+            this.barcctg.Location = new System.Drawing.Point(13, 294);
+            this.barcctg.Name = "barcctg";
+            this.barcctg.Size = new System.Drawing.Size(75, 23);
+            this.barcctg.TabIndex = 23;
+            this.barcctg.Text = "arcctg";
+            this.barcctg.UseVisualStyleBackColor = true;
+            this.barcctg.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // bfivestep
+            // 
+            this.bfivestep.Location = new System.Drawing.Point(94, 294);
+            this.bfivestep.Name = "bfivestep";
+            this.bfivestep.Size = new System.Drawing.Size(75, 23);
+            this.bfivestep.TabIndex = 24;
+            this.bfivestep.Text = "x^5";
+            this.bfivestep.UseVisualStyleBackColor = true;
+            this.bfivestep.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // brevers
+            // 
+            this.brevers.Location = new System.Drawing.Point(175, 294);
+            this.brevers.Name = "brevers";
+            this.brevers.Size = new System.Drawing.Size(75, 23);
+            this.brevers.TabIndex = 25;
+            this.brevers.Text = "1/x";
+            this.brevers.UseVisualStyleBackColor = true;
+            this.brevers.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // btanh
+            // 
+            this.btanh.Location = new System.Drawing.Point(13, 323);
+            this.btanh.Name = "btanh";
+            this.btanh.Size = new System.Drawing.Size(75, 23);
+            this.btanh.TabIndex = 26;
+            this.btanh.Text = "tanh";
+            this.btanh.UseVisualStyleBackColor = true;
+            this.btanh.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // bsqrt
+            // 
+            this.bsqrt.Location = new System.Drawing.Point(97, 323);
+            this.bsqrt.Name = "bsqrt";
+            this.bsqrt.Size = new System.Drawing.Size(75, 23);
+            this.bsqrt.TabIndex = 27;
+            this.bsqrt.Text = "x^0,5";
+            this.bsqrt.UseVisualStyleBackColor = true;
+            this.bsqrt.Click += new System.EventHandler(this.rnd_Click1);
+            // 
+            // brad
+            // 
+            this.brad.Location = new System.Drawing.Point(175, 323);
+            this.brad.Name = "brad";
+            this.brad.Size = new System.Drawing.Size(75, 23);
+            this.brad.TabIndex = 28;
+            this.brad.Text = "rad";
+            this.brad.UseVisualStyleBackColor = true;
+            this.brad.Click += new System.EventHandler(this.rnd_Click1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(272, 349);
+            this.Controls.Add(this.brad);
+            this.Controls.Add(this.bsqrt);
+            this.Controls.Add(this.btanh);
+            this.Controls.Add(this.brevers);
+            this.Controls.Add(this.bfivestep);
+            this.Controls.Add(this.barcctg);
+            this.Controls.Add(this.barctan);
+            this.Controls.Add(this.barccos);
+            this.Controls.Add(this.barcsin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bl10);
@@ -295,6 +403,15 @@
         private System.Windows.Forms.Button bl10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button barcsin;
+        private System.Windows.Forms.Button barccos;
+        private System.Windows.Forms.Button barctan;
+        private System.Windows.Forms.Button barcctg;
+        private System.Windows.Forms.Button bfivestep;
+        private System.Windows.Forms.Button brevers;
+        private System.Windows.Forms.Button btanh;
+        private System.Windows.Forms.Button bsqrt;
+        private System.Windows.Forms.Button brad;
     }
 }
 

@@ -3,21 +3,21 @@
 namespace Yikes_.OneArgument
 {
     public
-        class SinCalculator : IOnearg
+        class SinCalculator : IOneArgument
     {
         /// <summary>
         /// Calculate function Sinus 
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="FirstArgument"></param>
         /// Sinus is calculate
         /// <returns>
         /// Returns result function Sinus
         /// </returns>
         public
-            double Calculate(double num)
+            double Calculate(double FirstArgument)
         {
             double endres = 0;
-            endres = Math.Sin(num);
+            endres = Math.Sin(FirstArgument);
             return (endres);
         }
     }

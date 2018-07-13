@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Yikes_.OneArgument
 {
-    public class ArcSin : IOnearg
+    public class ArcSin : IOneArgument
     {
         /// <summary>
         ///  Calculate function Arcsin(x)

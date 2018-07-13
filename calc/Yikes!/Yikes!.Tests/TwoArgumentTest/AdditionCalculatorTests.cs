@@ -1,25 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Yikes_.TwoArgument;
-using static System.Math;
-namespace Yikes_.Tests
+
+namespace Yikes_.Tests.TwoArgumentTest
 {
     [TestFixture]
-    public
-        class AdditionCalculatorTests
+    public class AddTest
     {
-        [TestCase(66, 33)]
-        [TestCase(33, 3)]
-        [TestCase(12, 33)]
-        public
-            void CalcMetTests(double firstarg, double secarg)
+        public class AddTests
         {
-            AdditionCalculator addc = new AdditionCalculator();
-            double ExpResult = firstarg + secarg, actResult = addc.Calculate(firstarg, secarg); ;
-            Assert.AreEqual(ExpResult, actResult);
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
+            public void CalculateTest(double firstValue, double secondValue, double expected)
+            {
+                var calculator = new AdditionCalculator();
+                var actualResult = calculator.Calculate(firstValue, secondValue);
+                Assert.AreEqual(expected, actualResult);
+            }
         }
     }
 }

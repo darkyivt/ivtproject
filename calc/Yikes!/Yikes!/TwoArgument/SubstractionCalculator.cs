@@ -1,22 +1,22 @@
 ﻿namespace Yikes_.TwoArgument
 {
     public
-        class SubstractionCalculator : ITwoarg
+        class SubstractionCalculator : ITwoArgument
     {
         /// <summary>
         /// Calculate Substraction function
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="FirstArgument"></param>
+        /// <param name="SecondArgument"></param>
         /// Check two arguments
         /// <returns>
         /// Result Substraction of two argument
         /// </returns>
         public
-            double Calculate(double num1, double num2)
+            double Calculate(double FirstArgument, double SecondArgument)
         {
             double endres;
-            endres = num1 - num2;
+            endres = FirstArgument - SecondArgument;
             return (endres);
         }
     }

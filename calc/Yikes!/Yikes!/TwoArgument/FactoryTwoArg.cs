@@ -1,5 +1,4 @@
 ﻿using System;
-using Yikes_.OneArgument;
 
 namespace Yikes_.TwoArgument
 {
@@ -12,7 +11,7 @@ namespace Yikes_.TwoArgument
         /// <param name="calculatorName"></param>
         /// <returns></returns>
         public
-            static ITwoarg CreateCalculator(string calcname)
+            static ITwoArgument CreateCalculator(string calcname)
         {
             switch (calcname)
             {

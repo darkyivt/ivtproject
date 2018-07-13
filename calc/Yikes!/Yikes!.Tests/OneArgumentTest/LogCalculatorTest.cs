@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
     class LogTenCalculatorTests
     {
@@ -17,7 +13,7 @@ namespace Yikes_.Tests
             void CalcTests(double testnum)
         {
             LogTenCalculator logten = new LogTenCalculator();
-            double ExpResult = Log(testnum, 10), ActResult = logten.Calculate(testnum);
+            double ExpResult = Math.Log(testnum, 10), ActResult = logten.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

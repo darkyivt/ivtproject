@@ -1,26 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
     [TestFixture]
-    public
-        class SinCalculatorTests
+    public class SinusTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcSinTests(double typein)
+        [TestCase(70, 0.7738)]
+        [TestCase(45, 0.8509)]
+        [TestCase(60, -0.3048)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            SinCalculator sinc = new SinCalculator();
-            double ExpResult = Sin(typein), ActResult = sinc.Calculate(typein);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new SinCalculator();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.0001);
         }
     }
 }

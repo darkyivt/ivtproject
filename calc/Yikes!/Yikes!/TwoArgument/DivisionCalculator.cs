@@ -3,13 +3,13 @@
 namespace Yikes_.TwoArgument
 {
     public
-        class DivisionCalculator : ITwoarg
+        class DivisionCalculator : ITwoArgument
     {
         /// <summary>
         /// Calculate function division
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="FirstArgument"></param>
+        /// <param name="SecondArgument"></param>
         /// Check num2 
         /// if num2 is 0
         /// then error
@@ -17,15 +17,15 @@ namespace Yikes_.TwoArgument
         /// returns result division of two argument
         /// </returns>
         public
-            double Calculate(double num1, double num2)
+            double Calculate(double FirstArgument, double SecondArgument)
         {
             double endres;
-            if (num2 == 0)
+            if (SecondArgument == 0)
             {
                 endres = 0;
                 throw new Exception("На ноль делить нельзя.");
             }
-            return num1 / num2;
+            return FirstArgument / SecondArgument;
 
         }
     }

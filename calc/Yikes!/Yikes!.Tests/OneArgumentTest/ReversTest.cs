@@ -1,24 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
-    class ReversTests
+    [TestFixture]
+    public class InverseNumberTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcTests(double testnum)
+        [TestCase(2, 0.5)]
+        [TestCase(4, 0.25)]
+        [TestCase(5, 0.2)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            ReverseNumber rad = new ReverseNumber();
-            double ExpResult = 1 / testnum, ActResult = rad.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new ReverseNumber();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.01);
+        }
+        [TestCase(0)]
+        public void ExceptionTest(double firstArgument)
+        {
+            var calculator = new ReverseNumber();();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
         }
     }
 }

@@ -3,20 +3,20 @@
 namespace Yikes_.OneArgument
 {
     public
-        class ModCalculator : IOnearg
+        class ModCalculator : IOneArgument
     {
         /// <summary>
         /// Calculate function Mod
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="FirstArgument"></param>
         /// <returns>
         /// returns result  function Mod
         /// </returns>
         public
-            double Calculate(double num)
+            double Calculate(double FirstArgument)
         {
             double endres = 0;
-            endres = Math.Abs(num);
+            endres = Math.Abs(FirstArgument);
             return (endres);
         }
     }

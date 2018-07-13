@@ -1,6 +1,6 @@
 ﻿namespace Yikes_.TwoArgument
 {
-    public interface ITwoarg
+    public interface ITwoArgument
     {
         /// <summary>
         /// Create interface ITwoarg

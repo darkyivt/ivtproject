@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
-using Yikes_.OneArgument;
 using Yikes_.TwoArgument;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.TwoArgumentTest
 {
     [TestFixture]
     public

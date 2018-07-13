@@ -3,21 +3,21 @@
 namespace Yikes_.OneArgument
 {
     public
-        class CosCalculator : IOnearg
+        class CosCalculator : IOneArgument
     {
         /// <summary>
         /// Calculate function Cosinus(x)
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="FirstArgument"></param>
         /// arctan(x) is calculate
         /// <returns>
         /// Returns result cosinus (x)
         /// </returns>
         public
-            double Calculate(double num)
+            double Calculate(double FirstArgument)
         {
             double endres = 0;
-            endres = Math.Cos(num);
+            endres = Math.Cos(FirstArgument);
             return (endres);
         }
     }

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Yikes_.OneArgument
 {
-    public class Arccos : IOnearg
+    public class Arccos : IOneArgument
     {
         /// <summary>
         /// Calculates  Arccos(x) function
@@ -17,14 +14,14 @@ namespace Yikes_.OneArgument
         /// <returns>
         /// Return function Arccos (x)
         /// </returns>
-        public double Calculate(double num)
+        public double Calculate(double FirstArgument)
         {
-            if (num > 1 || num < -1)
+            if (FirstArgument > 1 || FirstArgument < -1)
             {
                 throw new Exception("Недопустимое значение");
             }
 
-            return Math.Acos(num);
+            return Math.Acos(FirstArgument);
         }
     }
 }

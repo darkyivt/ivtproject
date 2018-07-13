@@ -2,8 +2,7 @@
 
 namespace Yikes_.OneArgument
 {
-    public
-        class FactoryOneArg
+    public static class FactoryOneArg
     {
         /// <summary>
         /// Create Factory FactoryOneArg
@@ -11,7 +10,7 @@ namespace Yikes_.OneArgument
         /// <param name="calcname"></param>
         /// <returns></returns>
         public
-            static IOnearg CreateCalculator(string calcname)
+            static IOneArgument CreateCalculator(string calcname)
         {
 
             switch (calcname)

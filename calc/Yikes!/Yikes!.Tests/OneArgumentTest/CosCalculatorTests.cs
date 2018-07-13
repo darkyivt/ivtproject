@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
-    class CosCalculatorTests
+    [TestFixture]
+    public class CosinusTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcSinTests(double testnum)
+        [TestCase(0.9, 0.6216)]
+        [TestCase(0.6, 0.8253)]
+        [TestCase(0.5, 0.8775)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            CosCalculator cosc = new CosCalculator();
-            double ExpResult = Cos(testnum), ActResult = cosc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new CosCalculator();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.0001);
         }
     }
 }

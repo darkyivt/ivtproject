@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
     class ArcCtgTests
     {
@@ -17,7 +13,7 @@ namespace Yikes_.Tests
             void CalcTests(double testnum)
         {
             ArcCtg arcctgc = new ArcCtg();
-            double ExpResult = 1 / Atan(testnum), ActResult = arcctgc.Calculate(testnum);
+            double ExpResult = 1 / Math.Atan(testnum), ActResult = arcctgc.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

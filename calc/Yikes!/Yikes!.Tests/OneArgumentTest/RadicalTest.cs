@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
     class RadicalTests
     {
@@ -17,7 +13,7 @@ namespace Yikes_.Tests
             void CalcTests(double testnum)
         {
             Arccos rad = new Arccos();
-            double ExpResult = Pow(testnum, 1f / 2f), ActResult = rad.Calculate(testnum);
+            double ExpResult = Math.Pow(testnum, 1f / 2f), ActResult = rad.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

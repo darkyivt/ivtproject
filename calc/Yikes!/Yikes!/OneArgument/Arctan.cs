@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Yikes_.OneArgument
 {
-    public class ArcTan : IOnearg
+    public class ArcTan : IOneArgument
     {
         /// <summary>
         /// Calculate function Arctan(x)

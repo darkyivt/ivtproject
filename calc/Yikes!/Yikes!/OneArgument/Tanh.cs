@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Yikes_.OneArgument
 {
-    public class TanH : IOnearg
+    public class TanH : IOneArgument
     {
         /// <summary>
         /// Calculate function TanH(x)
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="FirstArgument"></param>
         /// tanH(x) is calculate
         /// <returns>
         /// Returns result tanH (x)
         /// </returns>
-        public double Calculate(double num)
+        public double Calculate(double FirstArgument)
         {
-            return Math.Tanh(num);
+            return Math.Tanh(FirstArgument);
         }
     }
 }

@@ -2,12 +2,12 @@
 
 namespace Yikes_.OneArgument
 {
-    public class LogTenCalculator : IOnearg
+    public class LogTenCalculator : IOneArgument
     {
         /// <summary>
         /// Calculate function Log10
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="FirstArgument"></param>
         /// Check num less than 0
         /// then error
         /// Check num==0
@@ -15,17 +15,17 @@ namespace Yikes_.OneArgument
         /// <returns>
         /// returns result  function log10
         /// </returns>
-        public double Calculate(double num)
+        public double Calculate(double FirstArgument)
         {
-            if (num < 0)
+            if (FirstArgument < 0)
             {
                 throw new Exception("Не может быть отрицательным");
             }
-            if (num == 0)
+            if (FirstArgument == 0)
             {
                 throw new Exception("Бесконечно убывает");
             }
-            return Math.Log10(num);
+            return Math.Log10(FirstArgument);
         }
     }
 }

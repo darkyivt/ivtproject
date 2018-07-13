@@ -1,21 +1,21 @@
 ﻿namespace Yikes_.TwoArgument
 {
     public
-        class AdditionCalculator : ITwoarg
+        class AdditionCalculator : ITwoArgument
     {
         /// <summary>
         /// Calculate function addition
         /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
+        /// <param name="FirstArgument1"></param>
+        /// <param name="SecondArgument"></param>
         /// <returns>
         /// returns result addition of two argument
         /// </returns>
         public
-            double Calculate(double num1, double num2)
+            double Calculate(double FirstArgument, double SecondArgument)
         {
             double endres;
-            endres = num1 + num2;
+            endres = FirstArgument + SecondArgument;
             return (endres);
         }
 

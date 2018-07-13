@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
-    class CubeCalculatorTests
+    [TestFixture]
+    public class CubeTest
     {
-        [TestCase(3)]
-        [TestCase(6)]
-        [TestCase(7)]
-        public void CalcTests(double testnum)
+        [TestCase(2, 8)]
+        [TestCase(3, 27)]
+        [TestCase(5, 125)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            CubeCalculator powc = new CubeCalculator();
-            double ExpResult = Pow(testnum, 3), ActResult = powc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new CubeCalculator();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }

@@ -1,25 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.TwoArgument;
-using static System.Math;
-namespace Yikes_.Tests
+
+namespace Yikes_.Tests.TwoArgumentTest
 {
     [TestFixture]
-    public
-    class DivisionCalculatorTests
+    public class DivisionTest
     {
-        [TestCase(66, 33)]
-        [TestCase(33, 3)]
-        [TestCase(12, 33)]
-        public
-                  void CalcMetTests(double firstarg, double secarg)
+        [TestCase(6, 2, 3)]
+        [TestCase(4, 4, 1)]
+        [TestCase(-18, -2, 9)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            DivisionCalculator divc = new DivisionCalculator();
-            double ExpResult = firstarg / secarg, ActResult = divc.Calculate(firstarg, secarg);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new DivisionCalculator();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
+        }
+        [TestCase(-10, 0)]
+        public void ExceptionZeroTest(double firstArgument, double secondArgument)
+        {
+            var calculator = new DivisionCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument, secondArgument));
         }
     }
 }

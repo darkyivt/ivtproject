@@ -55,7 +55,7 @@
     <Compile Include="TwoArgument\AdditionCalculator.cs" />
     <Compile Include="OneArgument\CubeCalculator.cs" />
     <Compile Include="OneArgument\ExpCalculator.cs" />
-    <Compile Include="OneArgument\InterfaceOneArg.cs" />
+    <Compile Include="OneArgument\IOneArgument.cs" />
     <Compile Include="OneArgument\CosCalculator.cs" />
     <Compile Include="TwoArgument\DivisionCalculator.cs" />
     <Compile Include="OneArgument\FactoryOneArg.cs" />

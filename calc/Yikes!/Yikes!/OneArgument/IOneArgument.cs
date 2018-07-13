@@ -1,6 +1,6 @@
 ﻿namespace Yikes_.OneArgument
 {
-    public interface IOnearg
+    public interface IOneArgument
     {
         /// <summary>
         /// Create interface IOoneCalculator

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using Yikes_.OneArgument;
-using static System.Math;
 
-namespace Yikes_.Tests
+namespace Yikes_.Tests.OneArgumentTest
 {
     [TestFixture]
     public
@@ -19,7 +15,7 @@ namespace Yikes_.Tests
             void CalcTests(double typein)
         {
             SinCalculator sinc = new SinCalculator();
-            double ExpResult = Pow(typein,2), ActResult = sinc.Calculate(typein);
+            double ExpResult = Math.Pow(typein,2), ActResult = sinc.Calculate(typein);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }
