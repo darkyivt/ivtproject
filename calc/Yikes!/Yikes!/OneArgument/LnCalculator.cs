@@ -2,19 +2,30 @@
 
 namespace Yikes_.OneArgument
 {
-    public
-    class LnCalculator: IOnearg
+    public class LnCalculator : IOnearg
     {
-        public 
-           double Calculate(double num)
+        /// <summary>
+        /// Calculate function Logarithm
+        /// </summary>
+        /// <param name="num"></param>
+        /// Check num less than 0
+        /// then error
+        /// Check num==0
+        /// then error 
+        /// <returns>
+        /// Returns result function logarithm
+        /// </returns>
+        public double Calculate(double num)
         {
-            double endres = 0;
-            if (num == 0)
+            if (num < 0)
             {
-                throw new Exception("Нулевой логарифм не существует");
+                throw new Exception("Не может быть отрицательным");
             }
-            endres = Math.Log(num);
-            return (endres);
+            else if (num == 0)
+            {
+                throw new Exception("Бесконечно убывает");
+            }
+            return Math.Log(num);
         }
     }
 }

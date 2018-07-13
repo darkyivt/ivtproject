@@ -14,7 +14,7 @@ namespace Yikes_.Tests
         [TestCase(66)]
         [TestCase(77)]
         public
-                  void CalcSinTests(double testnum)
+            void CalcSinTests(double testnum)
         {
             CosCalculator cosc = new CosCalculator();
             double ExpResult = Cos(testnum), ActResult = cosc.Calculate(testnum);

@@ -1,25 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace Yikes_.OneArgument
 {
     public
-        class TanCalculator : IOnearg
+        class Fivestep : IOnearg
     {
         /// <summary>
-        /// Calculate function Tg(x)
+        /// Calculate function fivestep (x)
         /// </summary>
         /// <param name="num"></param>
-        /// tg(x) is calculate
+        /// arctan(x) is calculate
         /// <returns>
-        /// Returns result function tg(x)
+        /// Returns result fivestep (x)
         /// </returns>
         public
             double Calculate(double num)
         {
             double endres = 0;
-            endres = Math.Tan(num);
+            endres = Math.Pow(num, 5);
             return (endres);
         }
     }
 }
-

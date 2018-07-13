@@ -5,6 +5,15 @@ namespace Yikes_.TwoArgument
     public
         class PowCalculator : ITwoarg
     {
+        /// <summary>
+        /// Calculate function Pow
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// Check two arguments
+        /// <returns>
+        /// Result NumberPow of two argument
+        /// </returns>
         public
             double Calculate(double num1, double num2)
         {

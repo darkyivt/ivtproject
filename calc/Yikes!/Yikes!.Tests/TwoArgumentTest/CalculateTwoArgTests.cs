@@ -10,7 +10,7 @@ namespace Yikes_.Tests
 {
     [TestFixture]
     public
-   class CalculateTwoArgTests
+        class CalculateTwoArgTests
     {
         [TestCase("bplus", typeof(AdditionCalculator))]
         [TestCase("bdiv", typeof(DivisionCalculator))]
@@ -20,8 +20,9 @@ namespace Yikes_.Tests
         [TestCase("blog", typeof(LogCalculator))]
         public void CalculateTest(string name, Type type)
         {
-            var calculator =FactoryTwoArg.CreateCalculator(name);
-            Assert.IsInstanceOf(type,calculator);
+            var calculator = FactoryTwoArg.CreateCalculator(name);
+            Assert.IsInstanceOf(type, calculator);
         }
     }
 }
+

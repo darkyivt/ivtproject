@@ -10,17 +10,18 @@ namespace Yikes_.Tests
 {
     [TestFixture]
     public
-        class SinCalculatorTests
+        class SquareTests
     {
         [TestCase(33)]
         [TestCase(66)]
         [TestCase(77)]
         public
-            void CalcSinTests(double typein)
+            void CalcTests(double typein)
         {
             SinCalculator sinc = new SinCalculator();
-            double ExpResult = Sin(typein), ActResult = sinc.Calculate(typein);
+            double ExpResult = Pow(typein,2), ActResult = sinc.Calculate(typein);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }
 }
+

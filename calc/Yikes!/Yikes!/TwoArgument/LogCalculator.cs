@@ -1,11 +1,11 @@
 ﻿using System;
 using Yikes_.TwoArgument;
 
-namespace Yikes_.OneArgument
+namespace Yikes_.TwoArgument
 {
     public
-    class LogCalculator : ITwoarg
-    { 
+        class LogCalculator : ITwoarg
+    {
         /// <summary>
         /// Calculate Logarithm function
         /// </summary>
@@ -17,19 +17,20 @@ namespace Yikes_.OneArgument
         /// <returns>
         ///Returns result logarithm finction
         /// </returns>
-     
-            public
-            double Calculate(double num1, double num2)
-            {
-                double endres = 0;
-                if (num1 == 0)
-                {
-                    throw new Exception("Нулевой логарифм не существует");
-                }
-            endres = Math.Log(num1, num2);
-                return (endres);
-            }
-        
 
+        public
+            double Calculate(double num1, double num2)
+        {
+            double endres = 0;
+            if (num1 == 0)
+            {
+                throw new Exception("Нулевой логарифм не существует");
+            }
+            endres = Math.Log(num1, num2);
+            return (endres);
+        }
+
+
+    }
 }
-}
+

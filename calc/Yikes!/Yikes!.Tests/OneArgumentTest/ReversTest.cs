@@ -8,18 +8,16 @@ using static System.Math;
 
 namespace Yikes_.Tests
 {
-    [TestFixture]
-    public
-        class SinCalculatorTests
+    class ReversTests
     {
         [TestCase(33)]
         [TestCase(66)]
         [TestCase(77)]
         public
-            void CalcSinTests(double typein)
+            void CalcTests(double testnum)
         {
-            SinCalculator sinc = new SinCalculator();
-            double ExpResult = Sin(typein), ActResult = sinc.Calculate(typein);
+            ReverseNumber rad = new ReverseNumber();
+            double ExpResult = 1 / testnum, ActResult = rad.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

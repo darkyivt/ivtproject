@@ -2,13 +2,18 @@
 
 namespace Yikes_.OneArgument
 {
-    public 
-    class FactoryOneArg
+    public
+        class FactoryOneArg
     {
+        /// <summary>
+        /// Create Factory FactoryOneArg
+        /// </summary>
+        /// <param name="calcname"></param>
+        /// <returns></returns>
         public
             static IOnearg CreateCalculator(string calcname)
         {
-            
+
             switch (calcname)
             {
                 case ("bsin"):
@@ -29,11 +34,29 @@ namespace Yikes_.OneArgument
                     return new LogTenCalculator();
                 case ("bmod"):
                     return new ModCalculator();
+                case ("barccos"):
+                    return new Arccos();
+                case ("barcctg"):
+                    return new ArcCtg();
+                case ("barcsin"):
+                    return new ArcSin();
+                case ("barctan"):
+                    return new ArcTan();
+                case ("bfivestep"):
+                    return new Fivestep();
+                case ("brad"):
+                    return new Radical();
+                case ("brevers"):
+                    return new ReverseNumber();
+                case ("bsqrt"):
+                    return new Sqrt();
+                case ("btanh"):
+                    return new TanH();
                 default: throw new Exception("Неизвестная операция");
             }
 
-            
+
         }
-        
+
     }
 }

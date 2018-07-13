@@ -9,13 +9,13 @@ namespace Yikes_.Tests
 {
     [TestFixture]
     public
-    class MultiplyCalculatorTests
+        class MultiplyCalculatorTests
     {
         [TestCase(66, 33)]
         [TestCase(33, 3)]
         [TestCase(12, 33)]
         public
-                     void CalcMetTests(double firstarg, double secarg)
+            void CalcMetTests(double firstarg, double secarg)
         {
             MultiplyCalculator mulc = new MultiplyCalculator();
             double ExpResult = firstarg * secarg, ActResult = mulc.Calculate(firstarg, secarg);

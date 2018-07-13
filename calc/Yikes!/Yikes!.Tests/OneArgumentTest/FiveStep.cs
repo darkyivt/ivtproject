@@ -8,16 +8,16 @@ using static System.Math;
 
 namespace Yikes_.Tests
 {
-    class SquareCalculatorTests
+    class FiveStepTests
     {
-        [TestCase(13)]
-        [TestCase(24)]
-        [TestCase(17)]
+        [TestCase(3)]
+        [TestCase(6)]
+        [TestCase(7)]
         public
             void CalcTests(double testnum)
         {
-            SquareCalculator sqare = new SquareCalculator();
-            double ExpResult = Pow(testnum, 2), ActResult = sqare.Calculate(testnum);
+            Fivestep fivestep = new Fivestep();
+            double ExpResult = Pow(testnum, 5), ActResult = fivestep.Calculate(testnum);
             Assert.AreEqual(ExpResult, ActResult);
         }
     }

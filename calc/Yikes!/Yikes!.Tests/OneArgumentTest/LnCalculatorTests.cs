@@ -14,7 +14,7 @@ namespace Yikes_.Tests
         [TestCase(66)]
         [TestCase(77)]
         public
-               void CalcLogTests(double testnum)
+            void CalcLogTests(double testnum)
         {
             LnCalculator logc = new LnCalculator();
             double ExpResult = Log(testnum), ActResult = logc.Calculate(testnum);

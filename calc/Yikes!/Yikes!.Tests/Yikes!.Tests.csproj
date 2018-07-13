@@ -45,11 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentTest\ArccosTest.cs" />
+    <Compile Include="OneArgumentTest\ArcCtgTest.cs" />
+    <Compile Include="OneArgumentTest\Arcsin.cs" />
+    <Compile Include="OneArgumentTest\Arctan.cs" />
     <Compile Include="OneArgumentTest\CubeCalculatorTest.cs" />
     <Compile Include="OneArgumentTest\ExpCalculatorTest.cs" />
+    <Compile Include="OneArgumentTest\FiveStep.cs" />
     <Compile Include="OneArgumentTest\LogCalculatorTest.cs" />
     <Compile Include="OneArgumentTest\LogTenCalculator.cs" />
+    <Compile Include="OneArgumentTest\RadicalTest.cs" />
+    <Compile Include="OneArgumentTest\ReversTest.cs" />
+    <Compile Include="OneArgumentTest\SqrtTest.cs" />
     <Compile Include="OneArgumentTest\SquareCalculatorTest.cs" />
+    <Compile Include="OneArgumentTest\TangTest.cs" />
     <Compile Include="TwoArgumentTest\AdditionCalculatorTests.cs" />
     <Compile Include="OneArgumentTest\CalculateOneArgTests.cs" />
     <Compile Include="TwoArgumentTest\CalculateTwoArgTests.cs" />

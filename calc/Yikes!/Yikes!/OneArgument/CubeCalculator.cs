@@ -3,8 +3,16 @@
 namespace Yikes_.OneArgument
 {
     public
-    class CubeCalculator: IOnearg
+        class CubeCalculator : IOnearg
     {
+        /// <summary>
+        /// Calculate function Cube (x)
+        /// </summary>
+        /// <param name="num"></param>
+        /// arctan(x) is calculate
+        /// <returns>
+        /// Returns result Cube (x)
+        /// </returns>
         public
             double Calculate(double num)
         {

@@ -43,6 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\Arccos.cs" />
+    <Compile Include="OneArgument\ArcCtg.cs" />
+    <Compile Include="OneArgument\Arcsin.cs" />
+    <Compile Include="OneArgument\Arctan.cs" />
+    <Compile Include="OneArgument\FiveStep.cs" />
+    <Compile Include="OneArgument\Radical.cs" />
+    <Compile Include="OneArgument\Revers.cs" />
+    <Compile Include="OneArgument\Sqrt.cs" />
+    <Compile Include="OneArgument\Tanh.cs" />
     <Compile Include="TwoArgument\AdditionCalculator.cs" />
     <Compile Include="OneArgument\CubeCalculator.cs" />
     <Compile Include="OneArgument\ExpCalculator.cs" />

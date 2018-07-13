@@ -11,7 +11,7 @@ namespace Yikes_.Tests
 {
     [TestFixture]
     public
-    class TanCalculatorTests
+        class TanCalculatorTests
     {
         [TestCase(33)]
         [TestCase(66)]
