@@ -58,7 +58,7 @@
     <Compile Include="OneArgument\IOneArgument.cs" />
     <Compile Include="OneArgument\CosCalculator.cs" />
     <Compile Include="TwoArgument\DivisionCalculator.cs" />
-    <Compile Include="OneArgument\FactoryOneArg.cs" />
+    <Compile Include="OneArgument\FactoryOneArgument.cs" />
     <Compile Include="TwoArgument\FactoryTwoArg.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,7 +66,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="TwoArgument\InterfaceTwo.cs" />
+    <Compile Include="TwoArgument\ITwoArgument.cs" />
     <Compile Include="OneArgument\LnCalculator.cs" />
     <Compile Include="TwoArgument\LogCalculator.cs" />
     <Compile Include="OneArgument\LogTenCalculator.cs" />

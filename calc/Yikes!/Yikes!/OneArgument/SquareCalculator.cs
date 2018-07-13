@@ -8,17 +8,15 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Square
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// Squaring is calculate
         /// <returns>
         /// Returns result function Square
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
-            double endres = 0;
-            endres = Math.Pow(FirstArgument, 2);
-            return (endres);
+            return Math.Pow(firstArgument, 2);
         }
     }
 }

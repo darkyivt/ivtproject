@@ -7,14 +7,14 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function TanH(x)
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// tanH(x) is calculate
         /// <returns>
         /// Returns result tanH (x)
         /// </returns>
-        public double Calculate(double FirstArgument)
+        public double Calculate(double firstArgument)
         {
-            return Math.Tanh(FirstArgument);
+            return Math.Tanh(firstArgument);
         }
     }
 }

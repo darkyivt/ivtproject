@@ -8,16 +8,14 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Mod
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// <returns>
         /// returns result  function Mod
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
-            double endres = 0;
-            endres = Math.Abs(FirstArgument);
-            return (endres);
+            return Math.Abs(firstArgument);
         }
     }
 }

@@ -3,7 +3,7 @@
 namespace Yikes_.TwoArgument
 {
     public
-        class FactoryTwoArg
+        class FactoryTwoArguments
     {
         /// <summary>
         /// Create Factory TwoArgumentsFactory
@@ -11,9 +11,9 @@ namespace Yikes_.TwoArgument
         /// <param name="calculatorName"></param>
         /// <returns></returns>
         public
-            static ITwoArgument CreateCalculator(string calcname)
+            static ITwoArgument CreateCalculator(string calculatorName)
         {
-            switch (calcname)
+            switch (calculatorName)
             {
                 case ("bplus"):
                     return new AdditionCalculator();

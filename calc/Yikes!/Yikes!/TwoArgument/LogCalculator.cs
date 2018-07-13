@@ -9,7 +9,7 @@ namespace Yikes_.TwoArgument
         /// Calculate Logarithm function
         /// </summary>
         /// <param name="FirsArgument"></param>
-        /// <param name="SecondArgument"></param>
+        /// <param name="secondArgument"></param>
         /// Check num1
         /// if num1==0
         /// then error
@@ -18,15 +18,14 @@ namespace Yikes_.TwoArgument
         /// </returns>
 
         public
-            double Calculate(double FirstArgument, double SecondArgument)
+            double Calculate(double firstArgument, double secondArgument)
         {
             double endres = 0;
-            if (FirstArgument == 0)
+            if (firstArgument == 0)
             {
                 throw new Exception("Нулевой логарифм не существует");
             }
-            endres = Math.Log(FirstArgument, SecondArgument);
-            return (endres);
+            return Math.Log(firstArgument, secondArgument); ;
         }
 
 

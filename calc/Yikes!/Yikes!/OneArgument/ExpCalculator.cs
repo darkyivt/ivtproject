@@ -8,17 +8,15 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function exp(x)
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// arctan(x) is calculate
         /// <returns>
         /// Returns result exp (x)
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
-            double endres = 0;
-            endres = Math.Exp(FirstArgument);
-            return (endres);
+            return Math.Exp(firstArgument);
         }
     }
 }

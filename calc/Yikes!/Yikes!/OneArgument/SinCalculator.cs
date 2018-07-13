@@ -8,17 +8,15 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Sinus 
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// Sinus is calculate
         /// <returns>
         /// Returns result function Sinus
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
-            double endres = 0;
-            endres = Math.Sin(FirstArgument);
-            return (endres);
+            return Math.Sin(firstArgument);
         }
     }
 }

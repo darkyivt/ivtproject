@@ -14,14 +14,14 @@ namespace Yikes_.OneArgument
         /// <returns>
         /// Return function Arccos (x)
         /// </returns>
-        public double Calculate(double FirstArgument)
+        public double Calculate(double firstArgument)
         {
-            if (FirstArgument > 1 || FirstArgument < -1)
+            if (firstArgument > 1 || firstArgument < -1)
             {
                 throw new Exception("Недопустимое значение");
             }
 
-            return Math.Acos(FirstArgument);
+            return Math.Acos(firstArgument);
         }
     }
 }

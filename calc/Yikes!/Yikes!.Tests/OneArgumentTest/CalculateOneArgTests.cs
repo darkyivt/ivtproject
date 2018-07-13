@@ -19,7 +19,7 @@ namespace Yikes_.Tests.OneArgumentTest
         [TestCase("bln", typeof(LnCalculator))]
         public void CalculateTest(string name, Type type)
         {
-            var calculator = FactoryOneArg.CreateCalculator(name);
+            var calculator = FactoryOneArgument.CreateCalculator(name);
             Assert.IsInstanceOf(type, calculator);
         }
     }

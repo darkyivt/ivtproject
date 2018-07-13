@@ -4,17 +4,17 @@ using Yikes_.OneArgument;
 
 namespace Yikes_.Tests.OneArgumentTest
 {
-    class ArcCtgTests
+    [TestFixture]
+    public class ArcctangentTest
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
-        public
-            void CalcTests(double testnum)
+        [TestCase(0.9, 0.7328)]
+        [TestCase(0.6, 0.5404)]
+        [TestCase(0.5, 0.4636)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            ArcCtg arcctgc = new ArcCtg();
-            double ExpResult = 1 / Math.Atan(testnum), ActResult = arcctgc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            var calculator = new ArcCtg();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult, 0.0001);
         }
     }
 }

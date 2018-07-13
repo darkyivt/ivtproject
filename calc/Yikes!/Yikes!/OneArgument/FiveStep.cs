@@ -8,17 +8,15 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function fivestep (x)
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// arctan(x) is calculate
         /// <returns>
         /// Returns result fivestep (x)
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
-            double endres = 0;
-            endres = Math.Pow(FirstArgument, 5);
-            return (endres);
+            return Math.Pow(firstArgument, 5);
         }
     }
 }

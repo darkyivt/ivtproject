@@ -6,15 +6,15 @@ namespace Yikes_.Tests.OneArgumentTest
 {
     class RadicalTests
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
+        [TestCase(3,5)]
+        [TestCase(6,8)]
+        [TestCase(7,10)]
         public
             void CalcTests(double testnum)
         {
             Arccos rad = new Arccos();
-            double ExpResult = Math.Pow(testnum, 1f / 2f), ActResult = rad.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            double expResult = Math.Pow(testnum, 1f / 2f), actResult = rad.Calculate(testnum);
+            Assert.AreEqual(expResult, actResult);
         }
     }
 }

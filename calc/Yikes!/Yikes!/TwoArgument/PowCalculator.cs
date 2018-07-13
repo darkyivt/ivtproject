@@ -8,18 +8,16 @@ namespace Yikes_.TwoArgument
         /// <summary>
         /// Calculate function Pow
         /// </summary>
-        /// <param name="FirstArgument"></param>
-        /// <param name="SecondArgument"></param>
+        /// <param name="firstArgument"></param>
+        /// <param name="secondArgument"></param>
         /// Check two arguments
         /// <returns>
         /// Result NumberPow of two argument
         /// </returns>
         public
-            double Calculate(double FirstArgument, double SecondArgument)
+            double Calculate(double firstArgument, double secondArgument)
         {
-            double endres = 0;
-            endres = Math.Pow(FirstArgument, SecondArgument);
-            return (endres);
+            return Math.Pow(firstArgument, secondArgument); 
         }
     }
 }

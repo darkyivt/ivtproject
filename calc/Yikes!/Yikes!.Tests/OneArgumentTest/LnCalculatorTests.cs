@@ -6,15 +6,15 @@ namespace Yikes_.Tests.OneArgumentTest
 {
     class LnCalculatorTests
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
+        [TestCase(3,1.3)]
+        [TestCase(9,2.3)]
+        [TestCase(27,3.5)]
         public
             void CalcLogTests(double testnum)
         {
             LnCalculator logc = new LnCalculator();
-            double ExpResult = Math.Log(testnum), ActResult = logc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            double expResult = Math.Log(testnum), actResult = logc.Calculate(testnum);
+            Assert.AreEqual(expResult, actResult);
         }
     }
 }

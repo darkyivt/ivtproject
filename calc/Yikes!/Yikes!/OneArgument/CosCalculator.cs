@@ -8,16 +8,16 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Cosinus(x)
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// arctan(x) is calculate
         /// <returns>
         /// Returns result cosinus (x)
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
             double endres = 0;
-            endres = Math.Cos(FirstArgument);
+            endres = Math.Cos(firstArgument);
             return (endres);
         }
     }

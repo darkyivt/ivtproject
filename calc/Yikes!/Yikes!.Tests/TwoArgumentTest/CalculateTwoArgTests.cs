@@ -16,7 +16,7 @@ namespace Yikes_.Tests.TwoArgumentTest
         [TestCase("blog", typeof(LogCalculator))]
         public void CalculateTest(string name, Type type)
         {
-            var calculator = FactoryTwoArg.CreateCalculator(name);
+            var calculator = FactoryTwoArguments.CreateCalculator(name);
             Assert.IsInstanceOf(type, calculator);
         }
     }

@@ -7,7 +7,7 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Log10
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// Check num less than 0
         /// then error
         /// Check num==0
@@ -15,17 +15,17 @@ namespace Yikes_.OneArgument
         /// <returns>
         /// returns result  function log10
         /// </returns>
-        public double Calculate(double FirstArgument)
+        public double Calculate(double firstArgument)
         {
-            if (FirstArgument < 0)
+            if (firstArgument < 0)
             {
                 throw new Exception("Не может быть отрицательным");
             }
-            if (FirstArgument == 0)
+            if (firstArgument == 0)
             {
                 throw new Exception("Бесконечно убывает");
             }
-            return Math.Log10(FirstArgument);
+            return Math.Log10(firstArgument);
         }
     }
 }

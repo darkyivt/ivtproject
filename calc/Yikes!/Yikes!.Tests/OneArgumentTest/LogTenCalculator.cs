@@ -6,15 +6,15 @@ namespace Yikes_.Tests.OneArgumentTest
 {
     class ModCalculatorTests
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
+        [TestCase(100, 2)]
+        [TestCase(10, 1)]
+        [TestCase(1000, 3)]
         public
             void CalcTests(double testnum)
         {
             ModCalculator modc = new ModCalculator();
-            double ExpResult = Math.Abs(testnum), ActResult = modc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            double expResult = Math.Abs(testnum), actResult = modc.Calculate(testnum);
+            Assert.AreEqual(expResult, actResult);
         }
     }
 }

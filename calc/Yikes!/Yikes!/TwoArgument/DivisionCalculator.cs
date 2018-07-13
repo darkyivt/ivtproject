@@ -8,8 +8,8 @@ namespace Yikes_.TwoArgument
         /// <summary>
         /// Calculate function division
         /// </summary>
-        /// <param name="FirstArgument"></param>
-        /// <param name="SecondArgument"></param>
+        /// <param name="firstArgument"></param>
+        /// <param name="secondArgument"></param>
         /// Check num2 
         /// if num2 is 0
         /// then error
@@ -17,15 +17,15 @@ namespace Yikes_.TwoArgument
         /// returns result division of two argument
         /// </returns>
         public
-            double Calculate(double FirstArgument, double SecondArgument)
+            double Calculate(double firstArgument, double secondArgument)
         {
             double endres;
-            if (SecondArgument == 0)
+            if (secondArgument == 0)
             {
                 endres = 0;
                 throw new Exception("На ноль делить нельзя.");
             }
-            return FirstArgument / SecondArgument;
+            return firstArgument / secondArgument;
 
         }
     }

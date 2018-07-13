@@ -7,14 +7,14 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Sqrt
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// Squaring is calculate
         /// <returns>
         /// Returns result function Squaring
         /// </returns>
-        public double Calculate(double FirstArgument)
+        public double Calculate(double firstArgument)
         {
-            return Math.Pow(FirstArgument, 0.5);
+            return Math.Pow(firstArgument, 0.5);
         }
     }
 }

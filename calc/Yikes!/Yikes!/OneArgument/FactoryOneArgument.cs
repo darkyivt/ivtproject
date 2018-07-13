@@ -2,18 +2,18 @@
 
 namespace Yikes_.OneArgument
 {
-    public static class FactoryOneArg
+    public static class FactoryOneArgument
     {
         /// <summary>
         /// Create Factory FactoryOneArg
         /// </summary>
-        /// <param name="calcname"></param>
+        /// <param name="calculatorName"></param>
         /// <returns></returns>
         public
-            static IOneArgument CreateCalculator(string calcname)
+            static IOneArgument CreateCalculator(string calculatorName)
         {
 
-            switch (calcname)
+            switch (calculatorName)
             {
                 case ("bsin"):
                     return new SinCalculator();

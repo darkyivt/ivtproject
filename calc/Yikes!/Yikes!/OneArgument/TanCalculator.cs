@@ -8,17 +8,15 @@ namespace Yikes_.OneArgument
         /// <summary>
         /// Calculate function Tg(x)
         /// </summary>
-        /// <param name="FirstArgument"></param>
+        /// <param name="firstArgument"></param>
         /// tg(x) is calculate
         /// <returns>
         /// Returns result function tg(x)
         /// </returns>
         public
-            double Calculate(double FirstArgument)
+            double Calculate(double firstArgument)
         {
-            double endres = 0;
-            endres = Math.Tan(FirstArgument);
-            return (endres);
+            return Math.Tan(firstArgument);
         }
     }
 }

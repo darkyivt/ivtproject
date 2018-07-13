@@ -6,15 +6,15 @@ namespace Yikes_.Tests.OneArgumentTest
 {
     class FiveStepTests
     {
-        [TestCase(3)]
-        [TestCase(6)]
-        [TestCase(7)]
+        [TestCase(1,1)]
+        [TestCase(2,32)]
+        [TestCase(3,243)]
         public
             void CalcTests(double testnum)
         {
             Fivestep fivestep = new Fivestep();
-            double ExpResult = Math.Pow(testnum, 5), ActResult = fivestep.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            double expResult = Math.Pow(testnum, 5), actResult = fivestep.Calculate(testnum);
+            Assert.AreEqual(expResult, actResult);
         }
     }
 }

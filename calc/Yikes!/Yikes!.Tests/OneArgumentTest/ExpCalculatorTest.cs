@@ -6,15 +6,15 @@ namespace Yikes_.Tests.OneArgumentTest
 {
     class ExpCalculatorTests
     {
-        [TestCase(33)]
-        [TestCase(66)]
-        [TestCase(77)]
+        [TestCase(0,1)]
+        [TestCase(1,2.7)]
+        [TestCase(2,7.8)]
         public
             void CalcTests(double testnum)
         {
             ExpCalculator expc = new ExpCalculator();
-            double ExpResult = Math.Exp(testnum), ActResult = expc.Calculate(testnum);
-            Assert.AreEqual(ExpResult, ActResult);
+            double expResult = Math.Exp(testnum), actResult = expc.Calculate(testnum);
+            Assert.AreEqual(expResult, actResult);
         }
     }
 }

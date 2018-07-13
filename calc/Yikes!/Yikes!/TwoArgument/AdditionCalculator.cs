@@ -6,17 +6,15 @@
         /// <summary>
         /// Calculate function addition
         /// </summary>
-        /// <param name="FirstArgument1"></param>
-        /// <param name="SecondArgument"></param>
+        /// <param name="firstArgument"></param>
+        /// <param name="secondArgument"></param>
         /// <returns>
         /// returns result addition of two argument
         /// </returns>
         public
-            double Calculate(double FirstArgument, double SecondArgument)
+            double Calculate(double firstArgument, double secondArgument)
         {
-            double endres;
-            endres = FirstArgument + SecondArgument;
-            return (endres);
+            return firstArgument + secondArgument;
         }
 
     }
